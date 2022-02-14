@@ -1,0 +1,23 @@
+@import url("https://use.typekit.net/omi5lym.css");
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+body {
+  font-family: utile, sans-serif;
+  color: oldlace;
+  background-color: black;
+
+}
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
