@@ -1,0 +1,42 @@
+@import url("https://use.typekit.net/zbs1zsj.css");
+
+body {
+  background-color: #03343f;
+}
+
+main h1 {
+  color: white;
+  font-family: utile, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+p {
+  color: white;
+  font-family: utile, sans-serif;
+  font-size: 0.75em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: left;
+  font-size: 30px;
+}
+
+.container1 {
+  margin-left: 4em;
+  margin-top: 1em;
+}
+
+.container2 {
+}
+
+img {
+  max-width: 85%;
+}
