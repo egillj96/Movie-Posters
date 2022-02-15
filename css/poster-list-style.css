@@ -1,0 +1,60 @@
+@import url("https://use.typekit.net/omi5lym.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: utile, sans-serif;
+  background-color: #ece0c3;
+}
+
+h1 {
+  margin: 20% 10% 5% 10%;
+  font-size: 2.6rem;
+}
+
+.poster-list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  margin: 0 10% 0 10%;
+}
+
+.poster-list-poster-container {
+  background-color: white;
+  padding: 20px 20px 30px 20px;
+  border-radius: 10px;
+}
+
+.poster-list-poster-container h2 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.poster-image-container img {
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  border: 1px solid rgb(143, 143, 143);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .poster-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 60px;
+    row-gap: 80px;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .poster-image-container img {
+    max-height: 400px;
+  }
+}
