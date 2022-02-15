@@ -1,23 +1,76 @@
 @import url("https://use.typekit.net/omi5lym.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Playball&family=Saira+Condensed:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Playball&family=Saira+Condensed:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Faster+One&family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap');
 header {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  font-size: 2rem;
 }
 
 body {
   font-family: utile, sans-serif;
   color: oldlace;
-  background-color: black;
-
+  background-color: #03343f;
 }
 a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
+  color: oldlace;
 }
 
 footer {
   display: flex;
   justify-content: center;
+}
+
+a:hover {
+  color: #ca6702;
+}
+
+main h1 {
+  color: white;
+  font-family: 'Faster One', cursive;
+  font-size: 2em;
+}
+
+p {
+  color: white;
+  font-family: utile, sans-serif;
+  font-size: 0.75em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.grid-container > div {
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.film_tape {
+  width: 30%;
+}
+
+.bottom_line {
+  font-size: 2rem;
 }
