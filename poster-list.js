@@ -63,6 +63,8 @@ function handleHeader() {
     } else if (country == "France") {
       header.textContent = "French" + " posters";
     }
+  } else {
+    header.textContent = "All posters";
   }
 }
 
