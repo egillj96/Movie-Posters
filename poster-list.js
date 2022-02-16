@@ -1,4 +1,19 @@
-const url = "https://keaprojects-3e08.restdb.io/rest/movieposters";
+const browserUrl = window.location.search;
+const urlParams = new URLSearchParams(browserUrl);
+
+const decade = urlParams.get("decade");
+const country = urlParams.get("country");
+
+let url = "";
+
+// set correct URL according to URL parameters
+if (decade) {
+  url = `https://keaprojects-3e08.restdb.io/rest/movieposters?q={"decade": "${decade}"}`;
+} else if (country) {
+  url = `https://keaprojects-3e08.restdb.io/rest/movieposters?q={"country": "${country}"}`;
+} else {
+  url = `https://keaprojects-3e08.restdb.io/rest/movieposters`;
+}
 
 const options = {
   headers: {
@@ -21,7 +36,34 @@ fetch(url, options)
   });
 
 function showPosters(posters) {
+  //hide spinner when we get the posters
+  let spinner = document.querySelector(".spinner");
+  spinner.classList.add("hide");
+
+  //set correct header
+  handleHeader(posters);
+
+  //show posters
   posters.forEach(showPoster);
+}
+
+function handleHeader() {
+  const header = document.querySelector("h1");
+
+  //setting the correct header
+  if (decade) {
+    header.textContent = decade + " posters";
+  } else if (country) {
+    if (country == "U.S.A") {
+      header.textContent = "U.S.A" + " posters";
+    } else if (country == "Poland") {
+      header.textContent = "Polish" + " posters";
+    } else if (country == "Russia") {
+      header.textContent = "Russian" + " posters";
+    } else if (country == "France") {
+      header.textContent = "French" + " posters";
+    }
+  }
 }
 
 function showPoster(poster) {
@@ -35,7 +77,7 @@ function showPoster(poster) {
   clone.querySelector("p").textContent =
     poster.country + ", " + poster.release_year;
 
-  clone.querySelector("a").href = `poster/?_id=${poster._id}`;
+  clone.querySelector("a").href = `poster?_id=${poster._id}`;
 
   const parent = document.querySelector(".poster-list-container");
   parent.appendChild(clone);

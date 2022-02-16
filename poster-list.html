@@ -8,9 +8,41 @@
     <link rel="stylesheet" href="css/poster-list-style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="">Posters</a>
+            <div class="nav-dropdown">
+              <ul>
+                <li>Decades</li>
+                <li><a href="poster-list.html?decade=50s">50s</a></li>
+                <li><a href="poster-list.html?decade=60s">60s</a></li>
+                <li><a href="poster-list.html?decade=70s">70s</a></li>
+                <li><a href="poster-list.html?decade=80s">80s</a></li>
+              </ul>
+              <ul>
+                <li>Countries</li>
+                <li><a href="poster-list.html?country=U.S.A">U.S.A</a></li>
+                <li><a href="poster-list.html?country=Poland">Poland</a></li>
+                <li><a href="poster-list.html?country=Russia">Russia</a></li>
+                <li><a href="poster-list.html?country=France">France</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h1>Posters</h1>
+      <h1></h1>
+      <div class="lds-ring spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div class="poster-list-container">
         <template id="poster-list-template">
           <div class="poster-list-poster-container">
