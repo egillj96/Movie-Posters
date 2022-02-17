@@ -5,11 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/about-style.css" />
+    <link rel="stylesheet" href="css/poster-list-style.css" />
     <title>About us</title>
   </head>
   <body>
     <header>
-      <h1>the movie poster website</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="poster-list.html"
+              >Posters <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i
+            ></a>
+            <div class="nav-dropdown">
+              <ul>
+                <li>Decades</li>
+                <li><a href="poster-list.html?decade=50s">50s</a></li>
+                <li><a href="poster-list.html?decade=60s">60s</a></li>
+                <li><a href="poster-list.html?decade=70s">70s</a></li>
+                <li><a href="poster-list.html?decade=80s">80s</a></li>
+              </ul>
+              <ul>
+                <li>Countries</li>
+                <li><a href="poster-list.html?country=U.S.A">U.S.A</a></li>
+                <li><a href="poster-list.html?country=Poland">Poland</a></li>
+                <li><a href="poster-list.html?country=Russia">Russia</a></li>
+                <li><a href="poster-list.html?country=France">France</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="grid-container">
@@ -30,8 +58,9 @@
         </div>
       </div>
     </main>
-    <footer>
-      <h1>the movie poster website</h1>
-    </footer>
   </body>
+  <script
+    src="https://kit.fontawesome.com/137a8d32f0.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
