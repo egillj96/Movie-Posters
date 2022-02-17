@@ -1,42 +1,14 @@
-
 @import url("https://use.typekit.net/omi5lym.css");
 
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
 
-<<<<<<< HEAD:style.css
-@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Bowlby+One+SC&family=Faster+One&family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap');
-header {
-  display: flex;
-  justify-content: flex-end;
-  gap: 4rem;
-  margin: 1rem 3rem 4rem;
-}
-=======
-@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Faster+One&family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
->>>>>>> fb4e3ad59d3252b4b799c4bf7c40c902df1fcc9f:css/style.css
+
 
 body {
   font-family: utile, sans-serif;
   color: #eb9c4d;
-<<<<<<< HEAD:style.css
-  background-color: #FFFBEE;
+  background-color: #fffbee;
 }
 
-a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: black;
-
-font-family: poppins, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-=======
-  background-color: rgb(235, 227, 209);
->>>>>>> fb4e3ad59d3252b4b799c4bf7c40c902df1fcc9f:css/style.css
-}
 
 footer {
   display: flex;
@@ -46,9 +18,9 @@ footer {
 
 main h1 {
   color: #353434;
-font-family: poppins, sans-serif;
-font-weight: 800;
-font-style: normal;
+  font-family: poppins, sans-serif;
+  font-weight: 800;
+  font-style: normal;
   font-size: 2em;
   text-align: center;
   margin: 0;
@@ -84,23 +56,21 @@ img {
 
 .button {
   font-size: "Utile", curisive;
-  color: #FFFBEE;
+  color: #fffbee;
   margin: 0 auto;
-  background-color: #EA8234;
+  background-color: #ea8234;
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
   border-radius: 15px;
-  box-shadow: 0 7px #EA8234;
+  box-shadow: 0 7px #ea8234;
 }
 
 .button:hover {
   color: #353434;
 }
-
-
 
 @media only screen and (max-width: 480px) {
   .grid-container {
