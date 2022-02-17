@@ -1,13 +1,15 @@
 @import url("https://use.typekit.net/zbs1zsj.css");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://use.typekit.net/omi5lym.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 body {
   background-color: #03343f;
 }
 
 main h1 {
-  color: white;
-  font-family: utile, sans-serif;
+  color: black;
+  font-family: "Poppins", sans-serif;
   font-size: 1.75em;
   line-height: 1.2em;
   text-align: center;
@@ -21,9 +23,10 @@ img {
 }
 
 p {
-  color: white;
+  color: black;
   font-family: utile, sans-serif;
   font-size: 0.8em;
+  margin-top: 1em;
 }
 .farwell {
   text-align: center;
