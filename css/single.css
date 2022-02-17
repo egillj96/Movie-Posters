@@ -70,6 +70,10 @@ button {
   text-align: center;
 }
 
+.imdb p {
+  margin-bottom: 20px;
+}
+
 span {
   padding-right: 1em;
 }
