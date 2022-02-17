@@ -1,14 +1,9 @@
 @import url("https://use.typekit.net/omi5lym.css");
 
-
-
-
 body {
   font-family: utile, sans-serif;
-  color: #eb9c4d;
   background-color: #fffbee;
 }
-
 
 footer {
   display: flex;
