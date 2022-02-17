@@ -68,19 +68,21 @@ function handleHeader() {
   }
 }
 
+//show the posters after fetching the data
 function showPoster(poster) {
+  //selecting the template and cloning it
   const template = document.querySelector("#poster-list-template").content;
   const clone = template.cloneNode(true);
 
+  //setting correct data for each poster
   clone.querySelector("img").src = poster.poster_url;
   clone.querySelector("img").alt = poster.title + " poster";
-
   clone.querySelector("h2").textContent = poster.title;
   clone.querySelector("p").textContent =
     poster.country + ", " + poster.release_year;
-
   clone.querySelector("a").href = `single.html?_id=${poster._id}`;
 
+  //selecting the parent and appending the cloned template
   const parent = document.querySelector(".poster-list-container");
   parent.appendChild(clone);
 }
