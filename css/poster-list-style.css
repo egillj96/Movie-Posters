@@ -1,0 +1,165 @@
+@import url("https://use.typekit.net/omi5lym.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: utile, sans-serif;
+  background-color: #ece0c3;
+}
+
+h1 {
+  margin: 2% 10% 2% 10%;
+  font-size: 2.6rem;
+}
+
+nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 10%;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  align-self: flex-end;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  margin-right: 40px;
+}
+
+nav > ul > li:nth-child(2) {
+  position: relative;
+}
+
+nav > ul > li:nth-child(2):hover .nav-dropdown {
+  display: flex;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-dropdown {
+  display: flex;
+  background-color: white;
+  padding: 20px 10px 20px 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+}
+
+.nav-dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-dropdown ul li:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  padding-left: 10px;
+}
+
+.nav-dropdown ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 0 12px 10px;
+  display: block;
+}
+
+.nav-dropdown ul li:not(:first-child):hover {
+  background-color: rgb(243, 242, 242);
+}
+
+.poster-list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  margin: 0 10% 10% 10%;
+}
+
+.poster-list-poster-container {
+  background-color: white;
+  padding: 20px 20px 30px 20px;
+  border-radius: 10px;
+}
+
+.poster-list-poster-container h2 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.poster-image-container img {
+  width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  border: 1px solid rgb(143, 143, 143);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .poster-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 60px;
+    row-gap: 80px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .poster-image-container img {
+    max-height: 400px;
+  }
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: 10%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
