@@ -77,7 +77,7 @@ function showPoster(poster) {
   clone.querySelector("p").textContent =
     poster.country + ", " + poster.release_year;
 
-  clone.querySelector("a").href = `poster?_id=${poster._id}`;
+  clone.querySelector("a").href = `single.html?_id=${poster._id}`;
 
   const parent = document.querySelector(".poster-list-container");
   parent.appendChild(clone);
