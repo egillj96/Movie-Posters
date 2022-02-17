@@ -30,7 +30,7 @@ nav ul {
 }
 
 nav > ul > li {
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 nav > ul > li:nth-child(2) {
@@ -41,14 +41,29 @@ nav > ul > li:nth-child(2):hover .nav-dropdown {
   display: flex;
 }
 
+nav > ul > li:nth-child(2):hover .fa-angle-down {
+  display: none;
+}
+
+nav > ul > li:nth-child(2) .fa-angle-up {
+  display: none;
+}
+
+nav > ul > li:nth-child(2):hover .fa-angle-up {
+  display: inline;
+}
+
 nav > ul > li > a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
+nav > ul > li > a:hover {
+  color: #ca6702;
+}
+
 .nav-dropdown {
-  display: flex;
   background-color: white;
   padding: 20px 10px 20px 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -78,6 +93,7 @@ nav > ul > li > a {
 
 .nav-dropdown ul li:not(:first-child):hover {
   background-color: rgb(243, 242, 242);
+  border-radius: 10px;
 }
 
 .poster-list-container {
@@ -92,6 +108,7 @@ nav > ul > li > a {
   background-color: white;
   padding: 20px 20px 30px 20px;
   border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .poster-list-poster-container h2 {
@@ -162,4 +179,9 @@ nav > ul > li > a {
 
 .hide {
   display: none;
+}
+
+.fa-angle-down,
+.fa-angle-up {
+  margin-left: 4px;
 }

@@ -1,0 +1,125 @@
+@import url("https://use.typekit.net/omi5lym.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Faster+One&family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+  margin: 1rem 3rem 4rem;
+}
+
+body {
+  font-family: utile, sans-serif;
+  color: #eb9c4d;
+  background-color: rgb(235,227,209);
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #005f73;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: #ca6702;
+}
+
+main h1 {
+  color: #ca6702;
+  font-family: "Staatliches";
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  color: #ca6702;
+  font-family: utile, sans-serif;
+  font-size: 0.75em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.container1 {
+  display: grid;
+  grid-gap: 4rem;
+  place-self: center;
+}
+
+.grid-container > div {
+  font-size: 2rem;
+}
+
+img {
+  max-width: 90%;
+}
+
+.button {
+  font-size: "Utile", curisive;
+  color: #005f73;
+  margin: 0 auto;
+  background-color: #ca6702;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 7px #005f73;
+}
+
+.button:hover {
+  color: #005f73;
+}
+
+.button:active {
+  box-shadow: 0 5px #0a9396;
+  transform: translateY(4px);
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  
+  }
+  .container1 {
+    display: grid;
+    grid-gap: 1rem;
+    place-self: center;
+  }
+
+  .container2 {
+    order: -1;
+  }
+  main h1 {
+    color: #ca6702;
+    font-family: "Staatliches";
+    font-size: 2rem;
+    place-self: center;
+    margin: 0;
+    width: 80%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+}
+
+
