@@ -4,33 +4,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Barrio&family=Faster+One&family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  gap: 4rem;
-  margin: 1rem 3rem 4rem;
-}
-
 body {
   font-family: utile, sans-serif;
   color: #eb9c4d;
-  background-color: rgb(235,227,209);
-}
-
-a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #005f73;
+  background-color: rgb(235, 227, 209);
 }
 
 footer {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
-}
-
-a:hover {
-  color: #ca6702;
 }
 
 main h1 {
@@ -95,7 +78,6 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0;
-  
   }
   .container1 {
     display: grid;
@@ -121,5 +103,3 @@ img {
     margin-top: 40px;
   }
 }
-
-

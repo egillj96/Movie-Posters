@@ -11,6 +11,13 @@ body {
   background-color: #ece0c3;
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+  margin: 1rem 6rem 4rem;
+}
+
 h1 {
   margin: 2% 10% 2% 10%;
   font-size: 2.6rem;
