@@ -1,9 +1,9 @@
+
 @import url("https://use.typekit.net/omi5lym.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Faster+One&family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Bowlby+One+SC&family=Faster+One&family=Monoton&family=Noto+Sans:ital,wght@0,400;1,400;1,700&family=Palette+Mosaic&family=Playball&family=Saira+Condensed:wght@300&display=swap');
 header {
   display: flex;
   justify-content: flex-end;
@@ -14,13 +14,20 @@ header {
 body {
   font-family: utile, sans-serif;
   color: #eb9c4d;
-  background-color: rgb(235,227,209);
+  background-color: #FFFBEE;
 }
 
 a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: #005f73;
+  color: black;
+
+font-family: poppins, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
 }
 
 footer {
@@ -34,11 +41,15 @@ a:hover {
 }
 
 main h1 {
-  color: #ca6702;
-  font-family: "Staatliches";
+  color: #353434;
+font-family: poppins, sans-serif;
+font-weight: 800;
+font-style: normal;
   font-size: 2em;
   text-align: center;
   margin: 0;
+  width: 80%;
+  place-self: center;
 }
 
 p {
@@ -69,26 +80,23 @@ img {
 
 .button {
   font-size: "Utile", curisive;
-  color: #005f73;
+  color: #FFFBEE;
   margin: 0 auto;
-  background-color: #ca6702;
+  background-color: #EA8234;
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
   border-radius: 15px;
-  box-shadow: 0 7px #005f73;
+  box-shadow: 0 7px #EA8234;
 }
 
 .button:hover {
-  color: #005f73;
+  color: #353434;
 }
 
-.button:active {
-  box-shadow: 0 5px #0a9396;
-  transform: translateY(4px);
-}
+
 
 @media only screen and (max-width: 480px) {
   .grid-container {
