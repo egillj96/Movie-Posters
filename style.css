@@ -13,8 +13,8 @@ header {
 
 body {
   font-family: utile, sans-serif;
-  color: #ca6702;
-  background-color: rgb(223, 211, 182);
+  color: #eb9c4d;
+  background-color: rgb(235,227,209);
 }
 
 a {
@@ -64,7 +64,7 @@ p {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .button {
